@@ -1,0 +1,16 @@
+<h1>Utilisateur: {{userId}}</h1>
+
+<div>
+    <div *ngFor="let user of users">
+        <span>{{user.login}}</span>
+        <div>
+        <img [src]="user.avatar_url" [alt]="user.login">
+        </div>
+        <div>
+            <span>{{user.name}}</span>
+            <span>{{user.username}}</span>
+            <span>{{user.email}}</span>
+            <span>{{user.phone}}</span>
+        </div>
+    </div>
+</div>
